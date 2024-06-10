@@ -64,26 +64,6 @@ create a new csv file using best performimg model based on values from data/clea
 __Recommendations and Conclusion__
 
 
-# Usage
-train_file = "data/cleaned_training_set.csv"
-test_file = "data/cleaned_test_set.csv"
-
-modeling = Modeling(train_file, test_file)
-train_df, test_df = modeling.load_data()
-X_train, X_val, y_train, y_val, test_df, label_encoders, train_ids, test_ids = modeling.preprocess_data(train_df, test_df)
-trained_models = modeling.train_models(X_train, y_train)
-tuned_decision_tree = modeling.hyperparameter_tuning(X_train, y_train)
-trained_models["Tuned Decision Tree"] = tuned_decision_tree
-evaluation = Evaluation()
-performance_metrics = evaluation.evaluate_models(trained_models, X_val, y_val)
-best_model_name = evaluation.find_best_model(performance_metrics)
-best_model = trained_models[best_model_name]
-
-deployment = Deployment(best_model, test_df, label_encoders, test_ids)
-predictions = deployment.generate_predictions()
-deployment.save_predictions(predictions)
-deployment.save_model(best_model)
-
 
 
 Class Design and Inheritance
@@ -142,7 +122,3 @@ Save the predictions to prediction_result.csv with columns id and status_group.
 Additional Details
 Provide extra implementation details for the classes and methods described:
 
-Include PCA or regularization (L1 or L2) where applicable to improve model performance.
-Here are the columns from cleaning_training_set.csv and cleaning_test_set.csv to be used:
-id, amount_tsh, funder, gps_height, installer, longitude, latitude, wpt_name, basin, subvillage, region, region_code, district_code, population, public_meeting, scheme_management, permit, construction_year, extraction_type_class, management_group, payment_type, quality_group, quantity, source_class, waterpoint_type, status_group, year_recorded
-id, amount_tsh, funder, gps_height, installer, longitude, latitude, wpt_name, basin, subvillage, region, region_code, district_code, population, public_meeting, scheme_management, permit, construction_year, extraction_type_class, management_group, payment_type, quality_group, quantity, source_class, waterpoint_type, year_recorded
