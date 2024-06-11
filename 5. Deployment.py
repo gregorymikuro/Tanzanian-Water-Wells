@@ -36,10 +36,10 @@ def main():
     basin = st.selectbox("Select the basin:", ["Lake Nyasa", "Lake Victoria", "Pangani", "Rufiji", "Lake Tanganyika", "Wami / Ruvu"])
     region = st.selectbox("Select the region:", ["Iringa", "Mara", "Manyara", "Mtwara", "Kagera", "Tanga"])
     extraction_type = st.selectbox("Select the extraction_type:", ["gravity", "submersible", "swn 80", "nira/tanira", "india mark ii", "other"])
-    water_quality = st.selectbox("Select the water_quality:", ["soft", "salty", "milky", "unknown", "coloured"])
+    water_quality = st.selectbox("Select the water_quality:", ["soft", "salty", "milky", "coloured"])
     quantity = st.selectbox("Select the quantity:", ["enough", "insufficient", "dry", "seasonal", "unknown"])
-    payment_type = st.selectbox("Select the payment_type:", ["never pay", "pay per bucket", "pay annually", "unknown", "pay monthly"])
-    management_group = st.selectbox("Select the management_group:", ["user-group", "other", "commercial", "parastatal", "unknown", "trust"])
+    payment_type = st.selectbox("Select the payment_type:", ["never pay", "pay per bucket", "pay annually", "pay monthly"])
+    management_group = st.selectbox("Select the management_group:", ["user-group", "other", "commercial", "parastatal", "trust"])
     source_type = st.selectbox("Select the source_type:", ["spring", "shallow well", "borehole", "river/lake", "rainwater harvesting", "other"])
     waterpoint_type = st.selectbox("Select the waterpoint_type:", ["communal standpipe", "hand pump", "other", "communal standpipe multiple", "improved spring", "cattle trough"])
 
