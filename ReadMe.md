@@ -102,6 +102,6 @@ The dataset was obtained from the DrivenData competition "Pump It Up: Data Minin
 
 ## Conclusion and Recommendations
 
-The models show promise in predicting water well functionality, but there's room for improvement, especially for the 'functional needs repair' class. It's recommended to collect more data, especially for this class, and explore advanced feature engineering techniques. Alternative models and cost-sensitive learning approaches could also be considered.
+The Voting Classifier performed best with an accuracy level of 80%. The models show promise in predicting water well functionality, but there's room for improvement, especially for the 'functional needs repair' class. It's recommended to collect more data, especially for this class, and explore advanced feature engineering techniques. Alternative models and cost-sensitive learning approaches could also be considered.
 
 Future work includes deployment, monitoring, and the creation of an interactive dashboard to visualize the results and gain further insights.
