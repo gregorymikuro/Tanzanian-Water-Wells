@@ -42,9 +42,9 @@ A machine learning classifier will be trained on historical data to predict the 
 The dataset was obtained from the DrivenData competition "Pump It Up: Data Mining the Water Table": [https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/)
 
 **Datasets:**
-- **`cleaned_training_set.csv`:** Contains features and the target variable (`status_group`) for training and validation.
-- **`cleaned_test_set.csv`:** Contains features for predicting well status (the `status_group` column is missing and will be predicted by the model).
-
+- **`training-set-values`
+- **`training-set-labels`
+- **`test-set-values`
 
 **Columns (Key Features):**
 - `amount_tsh`: Total static head (amount of water available to pump).
