@@ -1,5 +1,7 @@
 # Tanzanian Water Wells: Functionality Prediction
 
+![image](https://github.com/gregorymikuro/Tanzanian-Water-Wells/assets/155205164/fad3165c-3993-4bbe-b5a4-d472850014e5)
+
 ## Overview
 
 This machine learning project aims to address the critical challenge of non-functional or malfunctioning water wells in Tanzania. By building a predictive model, we seek to classify water wells as "functional," "non-functional," or "functional needs repair," thereby enabling more efficient resource allocation for repairs and maintenance. The model is designed to assist both NGOs and government agencies in improving water access for Tanzanian communities.
